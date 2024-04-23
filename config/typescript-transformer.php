@@ -20,6 +20,7 @@ return [
         Hybridly\Support\TypeScriptTransformer\DataResourceTypeScriptCollector::class,
         Spatie\LaravelData\Support\TypeScriptTransformer\DataTypeScriptCollector::class,
         Spatie\TypeScriptTransformer\Collectors\EnumCollector::class,
+        \App\Support\EnumCollector::class,
     ],
 
     /*
@@ -29,6 +30,7 @@ return [
 
     'transformers' => [
         Spatie\LaravelData\Support\TypeScriptTransformer\DataTypeScriptTransformer::class,
+        \App\Support\TypeScriptOptionsTransformer::class,
         Spatie\TypeScriptTransformer\Transformers\EnumTransformer::class,
         Spatie\LaravelTypeScriptTransformer\Transformers\DtoTransformer::class,
     ],
